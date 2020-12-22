@@ -45,7 +45,7 @@ $arguments = "-WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -Command &{
 
 # :: get json value for iconData
 
-$imageType = "jpg"
+$imageType = "png"
 $imageBase64 = [System.Convert]::ToBase64String((Get-Content -Raw -Encoding Byte -Path "$basePath\resources\$baseName.$imageType"))
 $iconData = "data:image/$imageType;base64,$imageBase64"
 
