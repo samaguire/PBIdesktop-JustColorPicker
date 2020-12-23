@@ -22,10 +22,10 @@ param (
 # :: if required files don't exist or are an old version then create (overwrite) the files
 
 $exeNotExist = -not (Test-Path -Path "$env:TEMP\$baseName.exe" -PathType Leaf)
-$txtNotExist = -not (Test-Path -Path "$env:TEMP\$baseName.txt" -PathType Leaf)
-$versionOld = $version -gt (Get-Content -Encoding UTF8 -Path "$env:TEMP\$baseName.txt" -ErrorAction SilentlyContinue)
+$verNotExist = -not (Test-Path -Path "$env:TEMP\$baseName.ver" -PathType Leaf)
+$versionOld = $version -gt (Get-Content -Encoding UTF8 -Path "$env:TEMP\$baseName.ver" -ErrorAction SilentlyContinue)
 
-if ( $exeNotExist -or $txtNotExist -or $versionOld ) {
+if ( $exeNotExist -or $verNotExist -or $versionOld ) {
 
     Add-Type -Assembly 'System.IO.Compression.FileSystem'
 
@@ -37,7 +37,7 @@ if ( $exeNotExist -or $txtNotExist -or $versionOld ) {
 
     # :: save version file
 
-    Set-Content -Encoding UTF8 -Path "$env:TEMP\$baseName.txt" -Value $version
+    Set-Content -Encoding UTF8 -Path "$env:TEMP\$baseName.ver" -Value $version
 
 }    
 

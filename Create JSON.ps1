@@ -3,7 +3,7 @@ $basePath = Split-Path -parent $PSCommandPath
 
 # :: set bulk of json values
 
-$version = "5.5"
+$version = "5.5.2"
 $name = "Just Color Picker"
 $description = "Just Color Picker"
 $path = "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
