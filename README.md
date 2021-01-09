@@ -1,2 +1,3 @@
 # PBIdesktop-JustColorPicker
-https://annystudio.com/software/colorpicker/
+
+<https://annystudio.com/software/colorpicker/>
