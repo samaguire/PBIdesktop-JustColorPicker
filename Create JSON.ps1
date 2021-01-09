@@ -1,11 +1,9 @@
-# https://annystudio.com/software/colorpicker/
-
 $baseName = "jcpicker"
 
 # Set bulk of json values
-$version = "5.5"
+$version = "5.5-03"
 $name = "Just Color Picker"
-$description = "Just Color Picker"
+$description = "Opens the Just Color Picker application (https://annystudio.com/software/colorpicker/)"
 $path = "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 
 # Get json value for arguments
